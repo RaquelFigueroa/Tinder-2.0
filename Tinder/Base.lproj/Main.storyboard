@@ -32,11 +32,21 @@
                                     <constraint firstAttribute="width" constant="414" id="SYS-Y1-agl"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pbM-Eb-NGD">
-                                <rect key="frame" x="99" y="445" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbM-Eb-NGD">
+                                <rect key="frame" x="39" y="85" width="336" height="362"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="p2t-Wd-wBq">
+                                        <rect key="frame" x="4" y="0.0" width="328" height="362"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92868215379999997" green="0.60484838679999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="0.12720304120000001" blue="0.12451911659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
+                                </subviews>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="362" id="8tn-fl-YBT"/>
+                                    <constraint firstAttribute="width" constant="336" id="FV8-92-MKl"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="pGs-cZ-tQ6" appends="YES" id="irW-0Y-pqW"/>
                                 </connections>
@@ -44,12 +54,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="pbM-Eb-NGD" firstAttribute="top" secondItem="UQI-8w-SbN" secondAttribute="bottom" constant="8" id="BG9-Jd-g7l"/>
                             <constraint firstItem="Mog-WD-IlQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aZS-f7-gAd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pbM-Eb-NGD" secondAttribute="trailing" constant="39" id="cyG-Wk-y8l"/>
                             <constraint firstItem="UQI-8w-SbN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eni-1J-KBg"/>
                             <constraint firstItem="Mog-WD-IlQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="k10-5l-ub5"/>
                             <constraint firstItem="UQI-8w-SbN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kul-fI-0HP"/>
                             <constraint firstItem="UQI-8w-SbN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="leH-9I-d0x"/>
                             <constraint firstItem="Mog-WD-IlQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oBJ-rL-tKy"/>
+                            <constraint firstItem="pbM-Eb-NGD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="q9i-7D-16B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -75,5 +88,6 @@
     <resources>
         <image name="nav_bar" width="320" height="65"/>
         <image name="nav_bar2" width="320" height="65"/>
+        <image name="ryan" width="449" height="514"/>
     </resources>
 </document>
